@@ -13,8 +13,9 @@ import tkinter as tk
 
 
 
+
 # ------------------ SETTINGS ------------------
-HOTKEY = "ctrl+alt+z"  # Global hotkey
+HOTKEY = "ctrl+alt+z"  # Global hotkey.
 
 # Initial coordinates
 start_x = start_y = end_x = end_y = 0

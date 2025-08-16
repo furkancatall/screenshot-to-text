@@ -12,7 +12,7 @@ perform OCR (Optical Character Recognition), and copy the text to the clipboard.
 
 ## Installation
 1. Install Python.
-2. Install [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) (must be instal led and added to PATH)
+2. Install [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) (must be installed and added to PATH)
 3. Install required Python packages:
 ```bash
 pip install -r requirements.txt
