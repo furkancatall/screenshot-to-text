@@ -12,15 +12,10 @@ import keyboard
 import tkinter as tk
 
 
-
-
-# ------------------ SETTINGS ------------------
 HOTKEY = "ctrl+alt+z"  # Global hotkey.
 
-# Initial coordinates
 start_x = start_y = end_x = end_y = 0
 
-# ------------------ OCR and Selection Functions ------------------
 def on_mouse_down(event):
     global start_x, start_y
     start_x, start_y = event.x, event.y
@@ -66,7 +61,6 @@ def start_capture():
 
     overlay.mainloop()
 
-# ------------------ Hotkey Listener ------------------
 def main():
     print(f"📌 Press '{HOTKEY}' to start screen capture + OCR.")
     while True:
