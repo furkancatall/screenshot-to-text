@@ -39,9 +39,6 @@ def capture_selection():
         screenshot = pyautogui.screenshot(region=(x1, y1, x2 - x1, y2 - y1))
         text = pytesseract.image_to_string(screenshot, lang="eng")
         pyperclip.copy(text)
-        print("\n--- OCR TEXT ---\n")
-        print(text)
-        print("\n(Copied to clipboard)")
     except Exception as e:
         print("OCR error:", e)
 
@@ -62,7 +59,6 @@ def start_capture():
     overlay.mainloop()
 
 def main():
-    print(f"📌 Press '{HOTKEY}' to start screen capture + OCR.")
     while True:
         keyboard.wait(HOTKEY)
         start_capture()

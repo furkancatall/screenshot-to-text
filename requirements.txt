@@ -2,4 +2,3 @@ pyautogui
 pytesseract
 pyperclip
 keyboard
-pillow
